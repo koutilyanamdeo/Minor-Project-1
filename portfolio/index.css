@@ -4,8 +4,11 @@ body{
     padding: 0;
     background-color: #eee;
     font-family: 'Josefin Sans', sans-serif;
+   
 }
-
+.all{
+    height: 100%;
+}
 .portfolio-container{
     display: flex;
     flex-direction: row;
@@ -13,7 +16,7 @@ body{
 }
 .aside-container{
     width: 30%;
-    height: 105%;
+    /* height: 105%; */
     background-color: #155e91;
     color: #ffffff;
 }
@@ -25,27 +28,36 @@ body{
 }
 .section-container{
     width: 70%;
-    height: 100%;
+    /* height: 100%; */
     background-color: #ffffff;
 }
 @media only screen and (max-width: 850px) {
     .portfolio-container{
         margin: 0;
     }
+
 }
 @media only screen and (max-width: 760px) {
         .portfolio-container{
-            flex-direction: column;
+            flex-direction: column-reverse;
+           
         }
         .aside-container{
             width: 100%;
-            height: 30vh;
-           
+           justify-content: baseline;
         }
         .section-container{
             width: 100%;
-            height: 70vh;
+           
         }
+        .div{
+            height: 100%;
+            width: auto;
+        }
+        .all{
+            flex-direction: column;
+        }
+    
     }
     .image-holder{
         height: 200px;
